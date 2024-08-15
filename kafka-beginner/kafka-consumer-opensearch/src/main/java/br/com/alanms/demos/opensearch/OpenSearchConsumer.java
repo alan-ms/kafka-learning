@@ -1,12 +1,10 @@
 package br.com.alanms.demos.opensearch;
 
-import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import org.apache.http.HttpHost;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.CredentialsProvider;
-
 import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -18,7 +16,6 @@ import org.apache.kafka.common.serialization.StringDeserializer;
 import org.opensearch.action.bulk.BulkRequest;
 import org.opensearch.action.bulk.BulkResponse;
 import org.opensearch.action.index.IndexRequest;
-import org.opensearch.action.index.IndexResponse;
 import org.opensearch.client.RequestOptions;
 import org.opensearch.client.RestClient;
 import org.opensearch.client.RestHighLevelClient;
@@ -43,7 +40,7 @@ public class OpenSearchConsumer {
     private static final String TOPIC_NAME = "wikimedia.recentchange";
 
     public static RestHighLevelClient createOpenSearchClient() {
-        String connString = "";
+        String connString = "https://srzi0w0ur8:w7qi026i9j@opensearch-consumer--3302135993.us-east-1.bonsaisearch.net:443";
 
         // we build a URI from connection string
         RestHighLevelClient restHighLevelClient;

@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 
 public class WikimediaChangeHandler implements BackgroundEventHandler {
 
-    private final Logger log = LoggerFactory.getLogger(WikimediaChangesProducer.class.getSimpleName());
+    private final Logger log = LoggerFactory.getLogger(WikimediaChangeHandler.class.getSimpleName());
 
     private final KafkaProducer<String, String> kafkaProducer;
 

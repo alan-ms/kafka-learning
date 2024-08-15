@@ -11,7 +11,9 @@
 
     <groupId>br.com.alanms.demos.opensearch</groupId>
     <artifactId>kafka-consumer-opensearch</artifactId>
-
+    <version>0.0.1-SNAPSHOT</version>
+    <name>opensearch-consumer-spring</name>
+    <description>Consumer Kafka build with Spring Framework</description>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
