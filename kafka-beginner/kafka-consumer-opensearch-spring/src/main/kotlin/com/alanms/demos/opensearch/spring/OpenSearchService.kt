@@ -29,7 +29,7 @@ class OpenSearchService {
     private lateinit var INDEX_NAME_OPEN_SEARCH: String
 
     fun createOpenSearchClient(): RestHighLevelClient {
-        val connString = "https://srzi0w0ur8:w7qi026i9j@opensearch-consumer--3302135993.us-east-1.bonsaisearch.net:443"
+        val connString = ""
 
         // we build a URI from connection string
         val restHighLevelClient: RestHighLevelClient

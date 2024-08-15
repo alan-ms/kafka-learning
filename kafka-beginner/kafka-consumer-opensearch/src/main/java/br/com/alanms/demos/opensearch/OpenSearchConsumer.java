@@ -40,7 +40,7 @@ public class OpenSearchConsumer {
     private static final String TOPIC_NAME = "wikimedia.recentchange";
 
     public static RestHighLevelClient createOpenSearchClient() {
-        String connString = "https://srzi0w0ur8:w7qi026i9j@opensearch-consumer--3302135993.us-east-1.bonsaisearch.net:443";
+        String connString = "";
 
         // we build a URI from connection string
         RestHighLevelClient restHighLevelClient;
