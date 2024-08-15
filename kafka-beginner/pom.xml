@@ -14,8 +14,8 @@
         <module>kafka-producer-wikimedia</module>
         <module>kafka-consumer-opensearch</module>
         <module>kafka-stream-wikimedia</module>
-        <module>wikimedia-producer-spring</module>
-        <module>opensearch-consumer-spring</module>
+        <module>kafka-producer-wikimedia-spring</module>
+        <module>kafka-consumer-opensearch-spring</module>
     </modules>
 
     <properties>
