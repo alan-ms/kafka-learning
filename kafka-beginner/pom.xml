@@ -16,6 +16,7 @@
         <module>kafka-stream-wikimedia</module>
         <module>kafka-producer-wikimedia-spring</module>
         <module>kafka-consumer-opensearch-spring</module>
+        <module>favorite-color</module>
     </modules>
 
     <properties>
