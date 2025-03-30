@@ -13,10 +13,10 @@
         <module>kafka-producer-wikimedia</module>
         <module>kafka-producer-wikimedia</module>
         <module>kafka-consumer-opensearch</module>
-        <module>kafka-stream-wikimedia</module>
+        <module>kafka-streams-wikimedia</module>
         <module>kafka-producer-wikimedia-spring</module>
         <module>kafka-consumer-opensearch-spring</module>
-        <module>favorite-color</module>
+        <module>kafka-streams-favorite-color</module>
     </modules>
 
     <properties>
