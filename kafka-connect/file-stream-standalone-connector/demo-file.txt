@@ -1,0 +1,2 @@
+Hellow World Kafka Connector Distribuied Mode
+Hi!

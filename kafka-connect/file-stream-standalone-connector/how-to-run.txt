@@ -1,0 +1,20 @@
+## Standalone Mode
+
+$ docker run --rm -it -v "$(pwd)":/tutorial --net=host lensesio/fast-data-dev:3.6.1 bash
+$ cd /tutorial/source/demo-1
+$ kafka-topics --create --topic demo-1 --partitions 3 --replication-factor 1 --boostrap-server 127.0.0.1:9092
+$ connect-standalone worker.properties file-stream-demo-standalone.properties
+
+## Distributed Mode
+
+$ docker run --rm -it --net=host landoop/fast-data-dev:cp3.3.0 bash
+$ kafka-topics --create --topic demo-1 --partitions 3 --replication-factor 1 --boostrap-server 127.0.0.1:9092
+
+Configure connector via fast-dev UI
+
+$ docker ps
+$ docker exec -it <containerId> bash
+$ touch demo-file.txt
+$ echo "hi" >> demo-file.txt
+$ echo "hello" >> demo-file.txt
+$ echo "from the other side" >> demo-file.txt
