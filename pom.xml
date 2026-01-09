@@ -18,6 +18,7 @@
         <module>kafka-producer-wikimedia-spring</module>
         <module>kafka-consumer-opensearch-spring</module>
         <module>kafka-streams-favorite-color</module>
+        <module>kafka-connect-github</module>
     </modules>
 
     <properties>
