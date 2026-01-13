@@ -1,10 +1,19 @@
-FROM confluentinc/cp-kafka-connect:3.2.0
+FROM lensesio/fast-data-dev:3.6.1
 
-WORKDIR /kafka-connect-source-github
-COPY config config
-COPY target target
+COPY mvnw .
+COPY .mvn .mvn
+COPY pom.xml .
+COPY src ./src
 
-VOLUME /kafka-connect-source-github/config
-VOLUME /kafka-connect-source-github/offsets
+RUN ./mvnw clean package
 
-CMD CLASSPATH="$(find target/ -type f -name '*.jar'| grep '\-package' | tr '\n' ':')" connect-standalone config/worker.properties config/GitHubSourceConnectorExample.properties
+COPY ./target/kafka-connect-github-1.0-SNAPSHOT-package/share/java/kafka-connect-github ./connectors
+
+ENV ADV_HOST=127.0.0.1
+ENV RUNTESTS=0
+
+EXPOSE 3030
+EXPOSE 2181
+EXPOSE 8081
+EXPOSE 8083
+EXPOSE 9092

@@ -1,0 +1,6 @@
+services:
+  kafka-connect-github:
+    build: .
+    image: kafka-connect-github:latest
+    ports:
+      - 3030:3030
